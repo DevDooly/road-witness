@@ -18,7 +18,7 @@
 
 ## 개발 방향
 
-첫 플랫폼은 **Android 우선 제안**입니다. Kotlin과 Jetpack Compose로 화면을 만들고, CameraX로 촬영·프레임 분석, Media3로 영상 편집, LiteRT로 기기 내 모델 추론, ML Kit 한국어 OCR로 번호판 읽기를 검증합니다. 기술 선택의 근거와 공식 문서는 [기술 구조](docs/ARCHITECTURE.md)에 있습니다.
+첫 개발 플랫폼은 **Android로 확정**했습니다. Kotlin과 Jetpack Compose로 화면을 만들고, CameraX로 촬영·프레임 분석, Media3로 영상 편집, LiteRT로 기기 내 모델 추론, ML Kit 한국어 OCR로 번호판 읽기를 검증합니다. 기술 선택의 근거와 공식 문서는 [기술 구조](docs/ARCHITECTURE.md)에 있습니다.
 
 실시간 촬영과 분석의 가능성을 먼저 실기기에서 확인합니다. 이후 영상 가져오기와 증거 편집 흐름을 완성하고, 실시간 후보 탐지를 연결합니다. iOS 확장은 Android에서 성능과 사용 흐름을 확인한 뒤 별도로 계획합니다.
 
