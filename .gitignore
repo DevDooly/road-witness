@@ -1,0 +1,95 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Credentials, signing, local configuration
+.env
+.env.*
+!.env.example
+local.properties
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+service-account*.json
+credentials*.json
+google-services.json
+GoogleService-Info.plist
+
+# Android / Gradle outputs
+.gradle/
+.kotlin/
+.cxx/
+**/build/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Future mobile and experiment tooling
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+Pods/
+DerivedData/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Private road footage, plates, location and report outputs
+/data/
+/recordings/
+/evidence/
+/exports/
+/datasets/
+/private/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.3gp
+*.gpx
+*.kml
+*.kmz
+*.srt
+*.vtt
+
+# Databases, model weights and experiment outputs
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+/ml/weights/
+/ml/runs/
+/ml/checkpoints/
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.safetensors
+*.h5
+*.ckpt
+*.log
+/tmp/
+/temp/
+
+# Synthetic, reviewed JSON examples are kept under examples/.
+# Actual images/CSV/JSON can have any name: review staged files as well.

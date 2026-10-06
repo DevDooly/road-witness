@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1-draft",
+  "is_synthetic": true,
+  "event_id": "example-event-001",
+  "session_id": "example-session-001",
+  "input_source": "imported_video",
+  "source_video_id": "example-source-001",
+  "source_sha256": null,
+  "candidate_type": "lane_boundary_crossing_suspected",
+  "event_start_ms": 12000,
+  "event_end_ms": 15000,
+  "proposed_clip_start_ms": 2000,
+  "proposed_clip_end_ms": 25000,
+  "observations": [
+    {
+      "kind": "vehicle_track_intersects_lane_boundary",
+      "track_id": "example-track-001",
+      "at_ms": 13500,
+      "is_synthetic": true
+    }
+  ],
+  "analysis": {
+    "detector_version": "unselected",
+    "rule_version": "unselected",
+    "confidence": null
+  },
+  "plate": {
+    "suggested_text": null,
+    "verified_text": null,
+    "source": "unavailable",
+    "verified_by_user": false
+  },
+  "captured_at": {
+    "value": null,
+    "source": "unavailable",
+    "verified_by_user": false
+  },
+  "location": {
+    "latitude": null,
+    "longitude": null,
+    "accuracy_meters": null,
+    "sample_time_ms": null,
+    "source": "unavailable",
+    "verified_by_user": false
+  },
+  "review_status": "candidate",
+  "export_status": "not_exported",
+  "submission_status": "unknown"
+}
