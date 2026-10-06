@@ -2,6 +2,8 @@
 
 권장 프로젝트명은 `RoadWitness`, 폴더와 저장소명은 `road-witness`입니다. 현재 프로젝트는 기존 `얌체신고` 폴더에서 작업하며, GitHub 저장소 이름은 로컬 폴더명과 달라도 됩니다.
 
+GitHub 저장소는 [DevDooly/road-witness](https://github.com/DevDooly/road-witness)이며 사용자 결정에 따라 공개로 관리합니다. 기본 브랜치는 `main`, 원격 이름은 `origin`입니다.
+
 ## 준비된 파일
 
 개발 계획과 구조 문서, 합성 이벤트 예시, `.gitignore`, `.gitattributes`, `.editorconfig`, 이슈·PR 템플릿을 버전 관리 대상으로 준비했습니다. 실제 영상·학습 자료·모델 파일·키와 환경 설정은 제외합니다.
@@ -15,32 +17,25 @@ git ls-files
 git check-ignore data/raw/example.mp4 data/exports/report.json .env signing.jks ml/weights/detector.tflite
 ```
 
-## GitHub 웹에서 생성하고 연결
+## 원격 저장소 연결
 
-1. GitHub에서 `road-witness` 저장소를 만듭니다. 초기에는 비공개 저장소를 제안합니다.
-2. 로컬 파일을 올릴 것이므로 README, `.gitignore`, 라이선스 자동 생성 옵션은 비워 둡니다.
-3. 아래 `$taskRemoteUrl`에 생성된 저장소 주소를 입력하고 프로젝트 폴더에서 실행합니다.
+원격 연결이 없는 로컬 저장소에서 다음 명령을 사용합니다. 이미 `origin`이 있으면 먼저 `git remote -v`로 주소를 확인합니다.
 
 ```powershell
-$taskRemoteUrl = 'https://github.com/YOUR_ACCOUNT/road-witness.git'
-git remote add origin $taskRemoteUrl
+git remote add origin https://github.com/DevDooly/road-witness.git
 git push -u origin main
 ```
 
-`YOUR_ACCOUNT`는 실제 사용자 또는 조직 이름으로 바꿉니다. 이미 `origin`이 있으면 먼저 `git remote -v`를 확인하고 올바른 저장소인지 확인합니다. 이 문서의 주소는 예시입니다.
+## 다른 개발 환경에서 복제
 
-## GitHub CLI로 생성하고 업로드
-
-GitHub CLI가 설치되고 로그인되어 있으면 프로젝트 폴더에서 다음 명령을 사용할 수 있습니다.
+프로젝트를 둘 상위 폴더에서 다음 명령을 실행합니다.
 
 ```powershell
-gh auth status
-# 로그인이 필요한 경우에 실행
-gh auth login
-gh repo create road-witness --private --source=. --remote=origin --push
+git clone https://github.com/DevDooly/road-witness.git
+Set-Location road-witness
 ```
 
-계정이나 조직 소유자, 공개 여부는 생성 전에 확인합니다. 원격 업로드는 저장소 대상이 확정된 뒤 수행합니다.
+push에는 해당 저장소의 쓰기 권한과 GitHub 인증이 필요합니다.
 
 ## 후속 커밋
 

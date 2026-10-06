@@ -70,4 +70,4 @@ road-witness/
 
 실제 주행 영상, 번호판·위치 데이터, 모델 가중치와 비밀 키는 `.gitignore`로 제외합니다. 합성 예시와 작은 개발용 코드는 저장소에서 관리합니다. GitHub 업로드 명령은 [Git 안내](docs/GIT_SETUP.md)에 있습니다.
 
-저장소 공개 여부와 배포 라이선스는 출시·공개 전에 결정합니다. 공개 라이선스는 아직 선택하지 않았습니다.
+저장소는 [DevDooly/road-witness](https://github.com/DevDooly/road-witness)에서 공개로 관리합니다. 배포 라이선스는 아직 선택하지 않았습니다.
