@@ -37,6 +37,7 @@
 - [개발 계획과 단계별 완료 기준](docs/PLAN.md)
 - [영상 처리와 AI 기술 구조](docs/ARCHITECTURE.md)
 - [영상과 개인정보 관리](docs/DATA_POLICY.md)
+- [기본 앱 실기기 실행 확인](docs/ANDROID_VERIFICATION.md)
 - [GitHub 업로드 방법](docs/GIT_SETUP.md)
 - [작업과 검증 기준](CONTRIBUTING.md)
 - [합성 이벤트 예시](examples/sample-event.json)
@@ -52,7 +53,11 @@ road-witness/
 │   ├── ARCHITECTURE.md
 │   ├── DATA_POLICY.md
 │   └── GIT_SETUP.md
-├── apps/android/README.md
+├── apps/android/
+│   ├── README.md
+│   ├── app/src/main/
+│   ├── gradle/
+│   └── gradlew.bat
 ├── ml/README.md
 ├── examples/sample-event.json
 └── .github/
@@ -62,9 +67,9 @@ road-witness/
 
 ## 현재 준비된 범위
 
-개발 계획, 구조 문서, 이벤트 예시, Git 제외 규칙과 협업 템플릿이 준비되어 있습니다. Android 앱 코드와 학습된 모델은 다음 개발 단계의 산출물이며, 현재 저장소에는 실행 가능한 앱이 없습니다.
+개발 계획, 구조 문서, 이벤트 예시, Git 제외 규칙과 협업 템플릿에 더해 Kotlin·Compose 기본 앱을 준비했습니다. 홈·주행·사건·설정 탭과 화면 이동을 제공하며, 촬영·AI 분석·영상 편집은 다음 단계에서 연결합니다.
 
-최초 개발 작업은 [1주차 검증](docs/PLAN.md)의 촬영·분석 병행 실험입니다. 앱 초기화 위치는 [apps/android](apps/android/README.md), 모델 실험 위치는 [ml](ml/README.md)입니다.
+앱의 빌드·설치 방법은 [Android 앱 안내](apps/android/README.md)에 있습니다. 다음 개발 작업은 [1주차 검증](docs/PLAN.md)의 촬영·분석 병행 실험이며, 모델 실험 위치는 [ml](ml/README.md)입니다.
 
 ## Git 관리
 
