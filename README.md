@@ -40,6 +40,8 @@
 - [기본 앱 실기기 실행 확인](docs/ANDROID_VERIFICATION.md)
 - [GitHub 업로드 방법](docs/GIT_SETUP.md)
 - [작업과 검증 기준](CONTRIBUTING.md)
+- [에이전트 작업 지침과 자동 commit·push 기준](AGENTS.md)
+- [개발 단계별 스킬 추천](docs/SKILLS.md)
 - [합성 이벤트 예시](examples/sample-event.json)
 
 ## 저장소 구성
@@ -47,12 +49,14 @@
 ```text
 road-witness/
 ├── README.md
+├── AGENTS.md
 ├── CONTRIBUTING.md
 ├── docs/
 │   ├── PLAN.md
 │   ├── ARCHITECTURE.md
 │   ├── DATA_POLICY.md
-│   └── GIT_SETUP.md
+│   ├── GIT_SETUP.md
+│   └── SKILLS.md
 ├── apps/android/
 │   ├── README.md
 │   ├── app/src/main/
@@ -76,3 +80,5 @@ road-witness/
 실제 주행 영상, 번호판·위치 데이터, 모델 가중치와 비밀 키는 `.gitignore`로 제외합니다. 합성 예시와 작은 개발용 코드는 저장소에서 관리합니다. GitHub 업로드 명령은 [Git 안내](docs/GIT_SETUP.md)에 있습니다.
 
 저장소는 [DevDooly/road-witness](https://github.com/DevDooly/road-witness)에서 공개로 관리합니다. 배포 라이선스는 아직 선택하지 않았습니다.
+
+완료한 변경은 필요한 검증 후 자동으로 commit하고 현재 작업 브랜치에 push합니다. 구체적인 기준은 [작업 지침](AGENTS.md)에 있습니다.
